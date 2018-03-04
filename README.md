@@ -14,7 +14,7 @@ Download [typo3 zip file](https://typo3.org/download/) and the run the script `C
 
 ### Enable `normal` login
 
-In the directory `` change from `rsa` to `normal`:
+In the directory `C:\xampp\htdocs\site\typo3conf \LocalConfiguration.php` change from `rsa` to `normal`:
 
 ```
 <?php
@@ -26,3 +26,4 @@ return [
         'loginSecurityLevel' => 'normal',
     ],
 ```
+[Typo3 RSA to Normal](https://www.pagemachine.de/blog/tutorial-update-typo3-8-7-als-testsystem-unter-windows-installieren/)

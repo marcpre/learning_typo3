@@ -990,6 +990,34 @@ if (TYPO3_MODE === 'BE') {
 }
 
 /**
+ * Extension: recycler
+ * File: C:/Users/marcus/Desktop/Coding Projects/learning_typo3/typo3/sysext/recycler/ext_tables.php
+ */
+
+$_EXTKEY = 'recycler';
+$_EXTCONF = $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY] ?? null;
+
+
+defined('TYPO3_MODE') or die();
+
+if (TYPO3_MODE === 'BE') {
+    \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerModule(
+        'TYPO3.CMS.Recycler',
+        'web',
+        'Recycler',
+        '',
+        [
+            'RecyclerModule' => 'index',
+        ],
+        [
+            'access' => 'user,group',
+            'icon' => 'EXT:recycler/Resources/Public/Icons/module-recycler.svg',
+            'labels' => 'LLL:EXT:recycler/Resources/Private/Language/locallang_mod.xlf',
+        ]
+    );
+}
+
+/**
  * Extension: reports
  * File: C:/Users/marcus/Desktop/Coding Projects/learning_typo3/typo3/sysext/reports/ext_tables.php
  */
@@ -1151,5 +1179,33 @@ if (TYPO3_MODE === 'BE' && !(TYPO3_REQUESTTYPE & TYPO3_REQUESTTYPE_INSTALL)) {
         ]
     );
 }
+
+/**
+ * Extension: bootstrap_package
+ * File: C:/Users/marcus/Desktop/Coding Projects/learning_typo3/typo3conf/ext/bootstrap_package/ext_tables.php
+ */
+
+$_EXTKEY = 'bootstrap_package';
+$_EXTCONF = $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY] ?? null;
+
+
+
+/*
+ * This file is part of the package bk2k/bootstrap-package.
+ *
+ * For the full copyright and license information, please read the
+ * LICENSE file that was distributed with this source code.
+ */
+
+if (!defined('TYPO3_MODE')) {
+    die('Access denied.');
+}
+
+/***************
+ * Allow Carousel Item & Accordion Item on Standart Pages
+ */
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_bootstrappackage_carousel_item');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_bootstrappackage_accordion_item');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_bootstrappackage_tab_item');
 
 #

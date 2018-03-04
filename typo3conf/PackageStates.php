@@ -98,6 +98,9 @@ return [
         'recordlist' => [
             'packagePath' => 'typo3/sysext/recordlist/',
         ],
+        'recycler' => [
+            'packagePath' => 'typo3/sysext/recycler/',
+        ],
         'reports' => [
             'packagePath' => 'typo3/sysext/reports/',
         ],
@@ -115,6 +118,12 @@ return [
         ],
         'viewpage' => [
             'packagePath' => 'typo3/sysext/viewpage/',
+        ],
+        'bootstrap_package' => [
+            'packagePath' => 'typo3conf/ext/bootstrap_package/',
+        ],
+        'introduction' => [
+            'packagePath' => 'typo3conf/ext/introduction/',
         ],
     ],
     'version' => 5,

@@ -2348,6 +2348,36 @@ return array (
             'size' => 10,
             'items' => 
             array (
+              0 => 
+              array (
+                0 => 'Bootstrap Package: Use Ionicons as Iconset (bootstrap_package)',
+                1 => 'EXT:bootstrap_package/Configuration/PageTS/Feature/Ionicons.txt',
+              ),
+              1 => 
+              array (
+                0 => 'Bootstrap Package: Backend Layouts (bootstrap_package)',
+                1 => 'EXT:bootstrap_package/Configuration/PageTS/Mod/WebLayout/BackendLayouts.txt',
+              ),
+              2 => 
+              array (
+                0 => 'Bootstrap Package: TCEMAIN (bootstrap_package)',
+                1 => 'EXT:bootstrap_package/Configuration/PageTS/TCEMAIN.txt',
+              ),
+              3 => 
+              array (
+                0 => 'Bootstrap Package: TCEFORM (bootstrap_package)',
+                1 => 'EXT:bootstrap_package/Configuration/PageTS/TCEFORM.txt',
+              ),
+              4 => 
+              array (
+                0 => 'Bootstrap Package: Content Previews (bootstrap_package)',
+                1 => 'EXT:bootstrap_package/Configuration/PageTS/Mod/WebLayout/TtContent/preview.txt',
+              ),
+              5 => 
+              array (
+                0 => 'Bootstrap Package: New Content Element Wizards (bootstrap_package)',
+                1 => 'EXT:bootstrap_package/Configuration/PageTS/Mod/Wizards/newContentElement.txt',
+              ),
             ),
             'enableMultiSelectFilterTextfield' => true,
             'softref' => 'ext_fileref',
@@ -8077,6 +8107,11 @@ return array (
                 0 => 'Form (form)',
                 1 => 'EXT:form/Configuration/TypoScript/',
               ),
+              3 => 
+              array (
+                0 => 'Bootstrap Package (bootstrap_package)',
+                1 => 'EXT:bootstrap_package/Configuration/TypoScript',
+              ),
             ),
             'enableMultiSelectFilterTextfield' => true,
             'softref' => 'ext_fileref',
@@ -8281,6 +8316,22 @@ return array (
           'menu_section' => 'content-menu-section',
           'menu_section_pages' => 'content-menu-section',
           'form_formframework' => 'content-form',
+          'accordion' => 'content-bootstrappackage-accordion',
+          'audio' => 'content-audio',
+          'carousel' => 'content-bootstrappackage-carousel',
+          'carousel_fullscreen' => 'content-bootstrappackage-carousel',
+          'carousel_small' => 'content-bootstrappackage-carousel',
+          'external_media' => 'content-bootstrappackage-externalmedia',
+          'listgroup' => 'content-bootstrappackage-listgroup',
+          'media' => 'mimetypes-x-content-multimedia',
+          'menu_thumbnail_dir' => 'content-menu-thumbnail',
+          'menu_thumbnail_list' => 'content-menu-thumbnail',
+          'panel' => 'content-panel',
+          'quote' => 'content-quote',
+          'tab' => 'content-bootstrappackage-tab',
+          'textcolumn' => 'content-text-columns',
+          'texticon' => 'content-bootstrappackage-texticon',
+          'textteaser' => 'content-text-teaser',
         ),
         'searchFields' => 'header,header_link,subheader,bodytext,pi_flexform',
       ),
@@ -8302,174 +8353,275 @@ return array (
             array (
               0 => 
               array (
-                0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.div.standard',
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:theme_name',
                 1 => '--div--',
               ),
               1 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:content_element.accordion',
+                1 => 'accordion',
+                2 => 'content-bootstrappackage-accordion',
+              ),
+              2 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:content_element.audio',
+                1 => 'audio',
+                2 => 'content-audio',
+              ),
+              3 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:content_element.carousel_fullscreen',
+                1 => 'carousel_fullscreen',
+                2 => 'content-bootstrappackage-carousel',
+              ),
+              4 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:content_element.carousel_small',
+                1 => 'carousel_small',
+                2 => 'content-bootstrappackage-carousel',
+              ),
+              5 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:content_element.carousel',
+                1 => 'carousel',
+                2 => 'content-bootstrappackage-carousel',
+              ),
+              6 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:content_element.external_media',
+                1 => 'external_media',
+                2 => 'content-bootstrappackage-externalmedia',
+              ),
+              7 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:content_element.listgroup',
+                1 => 'listgroup',
+                2 => 'content-bootstrappackage-listgroup',
+              ),
+              8 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:content_element.panel',
+                1 => 'panel',
+                2 => 'content-panel',
+              ),
+              9 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:content_element.quote',
+                1 => 'quote',
+                2 => 'content-quote',
+              ),
+              10 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:content_element.tab',
+                1 => 'tab',
+                2 => 'content-bootstrappackage-tab',
+              ),
+              11 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:content_element.texticon',
+                1 => 'texticon',
+                2 => 'content-bootstrappackage-texticon',
+              ),
+              12 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:content_element.textteaser',
+                1 => 'textteaser',
+                2 => 'content-text-teaser',
+              ),
+              13 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:content_element.textcolumn',
+                1 => 'textcolumn',
+                2 => 'content-text-columns',
+              ),
+              14 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:content_element.media',
+                1 => 'media',
+                2 => 'mimetypes-x-content-multimedia',
+              ),
+              15 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:menu.thumbnail_list',
+                1 => 'menu_thumbnail_list',
+                2 => 'content-menu-thumbnail',
+              ),
+              16 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:menu.thumbnail_dir',
+                1 => 'menu_thumbnail_dir',
+                2 => 'content-menu-thumbnail',
+              ),
+              17 => 
+              array (
+                0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.div.standard',
+                1 => '--div--',
+              ),
+              18 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.I.0',
                 1 => 'header',
                 2 => 'content-header',
               ),
-              2 => 
+              19 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.I.1',
                 1 => 'text',
                 2 => 'content-text',
               ),
-              3 => 
+              20 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.I.2',
                 1 => 'textpic',
                 2 => 'content-textpic',
               ),
-              4 => 
+              21 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.I.3',
                 1 => 'image',
                 2 => 'content-image',
               ),
-              5 => 
+              22 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.textmedia',
                 1 => 'textmedia',
                 2 => 'content-textmedia',
               ),
-              6 => 
+              23 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.div.lists',
                 1 => '--div--',
               ),
-              7 => 
+              24 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.I.4',
                 1 => 'bullets',
                 2 => 'content-bullets',
               ),
-              8 => 
+              25 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.I.5',
                 1 => 'table',
                 2 => 'content-table',
               ),
-              9 => 
+              26 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.I.6',
                 1 => 'uploads',
                 2 => 'content-special-uploads',
               ),
-              10 => 
+              27 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.div.menu',
                 1 => '--div--',
               ),
-              11 => 
+              28 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.menu_abstract',
                 1 => 'menu_abstract',
                 2 => 'content-menu-abstract',
               ),
-              12 => 
+              29 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.menu_categorized_content',
                 1 => 'menu_categorized_content',
                 2 => 'content-menu-categorized',
               ),
-              13 => 
+              30 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.menu_categorized_pages',
                 1 => 'menu_categorized_pages',
                 2 => 'content-menu-categorized',
               ),
-              14 => 
+              31 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.menu_pages',
                 1 => 'menu_pages',
                 2 => 'content-menu-pages',
               ),
-              15 => 
+              32 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.menu_subpages',
                 1 => 'menu_subpages',
                 2 => 'content-menu-pages',
               ),
-              16 => 
+              33 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.menu_recently_updated',
                 1 => 'menu_recently_updated',
                 2 => 'content-menu-recently-updated',
               ),
-              17 => 
+              34 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.menu_related_pages',
                 1 => 'menu_related_pages',
                 2 => 'content-menu-related',
               ),
-              18 => 
+              35 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.menu_section',
                 1 => 'menu_section',
                 2 => 'content-menu-section',
               ),
-              19 => 
+              36 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.menu_section_pages',
                 1 => 'menu_section_pages',
                 2 => 'content-menu-section',
               ),
-              20 => 
+              37 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.menu_sitemap',
                 1 => 'menu_sitemap',
                 2 => 'content-menu-sitemap',
               ),
-              21 => 
+              38 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.menu_sitemap_pages',
                 1 => 'menu_sitemap_pages',
                 2 => 'content-menu-sitemap-pages',
               ),
-              22 => 
+              39 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.div.special',
                 1 => '--div--',
               ),
-              23 => 
+              40 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.I.13',
                 1 => 'shortcut',
                 2 => 'content-special-shortcut',
               ),
-              24 => 
+              41 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.I.14',
                 1 => 'list',
                 2 => 'content-plugin',
               ),
-              25 => 
+              42 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.I.16',
                 1 => 'div',
                 2 => 'content-special-div',
               ),
-              26 => 
+              43 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.I.17',
                 1 => 'html',
                 2 => 'content-special-html',
               ),
-              27 => 
+              44 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.div.forms',
                 1 => '--div--',
               ),
-              28 => 
+              45 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType.I.10',
                 1 => 'login',
                 2 => 'content-elements-login',
               ),
-              29 => 
+              46 => 
               array (
                 0 => 'Form',
                 1 => 'form_formframework',
@@ -8704,6 +8856,16 @@ return array (
                 1 => 'indent-right',
               ),
               6 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:field.frame_class.well',
+                1 => 'well',
+              ),
+              7 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:field.frame_class.jumbotron',
+                1 => 'jumbotron',
+              ),
+              8 => 
               array (
                 0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:frame_class.none',
                 1 => 'none',
@@ -9841,6 +10003,10 @@ return array (
                     ',
               '*,login' => 'FILE:EXT:felogin/Configuration/FlexForms/Login.xml',
               '*,form_formframework' => 'FILE:EXT:form/Configuration/FlexForms/FormFramework.xml',
+              '*,carousel' => 'FILE:EXT:bootstrap_package/Configuration/FlexForms/Carousel.xml',
+              '*,carousel_fullscreen' => 'FILE:EXT:bootstrap_package/Configuration/FlexForms/Carousel.xml',
+              '*,carousel_small' => 'FILE:EXT:bootstrap_package/Configuration/FlexForms/Carousel.xml',
+              '*,tab' => 'FILE:EXT:bootstrap_package/Configuration/FlexForms/Tab.xml',
             ),
             'search' => 
             array (
@@ -10179,6 +10345,347 @@ return array (
             'type' => 'passthrough',
           ),
         ),
+        'tx_bootstrappackage_accordion_item' => 
+        array (
+          'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:accordion_item',
+          'config' => 
+          array (
+            'type' => 'inline',
+            'foreign_table' => 'tx_bootstrappackage_accordion_item',
+            'foreign_field' => 'tt_content',
+            'appearance' => 
+            array (
+              'useSortable' => true,
+              'showSynchronizationLink' => true,
+              'showAllLocalizationLink' => true,
+              'showPossibleLocalizationRecords' => true,
+              'showRemovedLocalizationRecords' => false,
+              'expandSingle' => true,
+              'enabledControls' => 
+              array (
+                'localize' => true,
+              ),
+            ),
+            'behaviour' => 
+            array (
+              'mode' => 'select',
+              'localizeChildrenAtParentLocalization' => true,
+            ),
+          ),
+        ),
+        'external_media_source' => 
+        array (
+          'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:field.external_media_source',
+          'config' => 
+          array (
+            'type' => 'input',
+            'size' => 50,
+            'eval' => 'trim',
+            'max' => 1024,
+          ),
+        ),
+        'external_media_ratio' => 
+        array (
+          'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:field.external_media_ratio',
+          'config' => 
+          array (
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => '16:9',
+                1 => '16by9',
+              ),
+              1 => 
+              array (
+                0 => '4:3',
+                1 => '4by3',
+              ),
+            ),
+          ),
+        ),
+        'panel_class' => 
+        array (
+          'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:field.panel_class',
+          'config' => 
+          array (
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.default',
+                1 => 'default',
+              ),
+              1 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.primary',
+                1 => 'primary',
+              ),
+              2 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.success',
+                1 => 'success',
+              ),
+              3 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.info',
+                1 => 'info',
+              ),
+              4 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.warning',
+                1 => 'warning',
+              ),
+              5 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.danger',
+                1 => 'danger',
+              ),
+            ),
+          ),
+        ),
+        'quote_source' => 
+        array (
+          'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:quote.source',
+          'config' => 
+          array (
+            'type' => 'input',
+            'size' => 50,
+            'max' => 255,
+          ),
+        ),
+        'quote_link' => 
+        array (
+          'exclude' => true,
+          'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:quote.link',
+          'config' => 
+          array (
+            'type' => 'input',
+            'renderType' => 'inputLink',
+            'size' => 50,
+            'max' => 1024,
+            'eval' => 'trim',
+            'fieldControl' => 
+            array (
+              'linkPopup' => 
+              array (
+                'options' => 
+                array (
+                  'title' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:quote.link',
+                ),
+              ),
+            ),
+            'softref' => 'typolink',
+          ),
+        ),
+        'tx_bootstrappackage_tab_item' => 
+        array (
+          'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:tab_item',
+          'config' => 
+          array (
+            'type' => 'inline',
+            'foreign_table' => 'tx_bootstrappackage_tab_item',
+            'foreign_field' => 'tt_content',
+            'appearance' => 
+            array (
+              'useSortable' => true,
+              'showSynchronizationLink' => true,
+              'showAllLocalizationLink' => true,
+              'showPossibleLocalizationRecords' => true,
+              'showRemovedLocalizationRecords' => false,
+              'expandSingle' => true,
+              'enabledControls' => 
+              array (
+                'localize' => true,
+              ),
+            ),
+            'behaviour' => 
+            array (
+              'mode' => 'select',
+              'localizeChildrenAtParentLocalization' => true,
+            ),
+          ),
+        ),
+        'icon' => 
+        array (
+          'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:field.icon',
+          'config' => 
+          array (
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.none',
+                1 => 0,
+                2 => 'EXT:bootstrap_package/Resources/Public/Images/Icons/none.jpg',
+              ),
+            ),
+            'itemsProcFunc' => 'BK2K\\BootstrapPackage\\Utility\\TextIconUtility->addIconItems',
+            'fieldWizard' => 
+            array (
+              'selectIcons' => 
+              array (
+                'disabled' => false,
+              ),
+            ),
+          ),
+        ),
+        'icon_position' => 
+        array (
+          'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:field.icon_position',
+          'config' => 
+          array (
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.left',
+                1 => 'left',
+              ),
+              1 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.right',
+                1 => 'right',
+              ),
+              2 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.top',
+                1 => 'top',
+              ),
+            ),
+          ),
+        ),
+        'icon_type' => 
+        array (
+          'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:field.icon_type',
+          'onChange' => 'reload',
+          'config' => 
+          array (
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'default' => '0',
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.default',
+                1 => 0,
+              ),
+              1 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.square',
+                1 => 1,
+              ),
+              2 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.circle',
+                1 => 2,
+              ),
+            ),
+          ),
+        ),
+        'icon_size' => 
+        array (
+          'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:field.icon_size',
+          'config' => 
+          array (
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.default',
+                1 => 0,
+              ),
+              1 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.medium',
+                1 => 1,
+              ),
+              2 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.large',
+                1 => 2,
+              ),
+              3 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.awesome',
+                1 => 3,
+              ),
+            ),
+          ),
+        ),
+        'icon_color' => 
+        array (
+          'displayCond' => 'FIELD:icon_type:!=:0',
+          'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:field.icon_color',
+          'config' => 
+          array (
+            'type' => 'input',
+            'renderType' => 'colorpicker',
+            'default' => '#FFFFFF',
+          ),
+        ),
+        'icon_background' => 
+        array (
+          'displayCond' => 'FIELD:icon_type:!=:0',
+          'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:field.icon_background',
+          'config' => 
+          array (
+            'type' => 'input',
+            'renderType' => 'colorpicker',
+            'default' => '#333333',
+          ),
+        ),
+        'teaser' => 
+        array (
+          'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:field.teaser',
+          'exclude' => true,
+          'config' => 
+          array (
+            'type' => 'text',
+            'softref' => 'rtehtmlarea_images,typolink_tag',
+            'cols' => '40',
+            'rows' => '3',
+          ),
+        ),
+        'tx_bootstrappackage_carousel_item' => 
+        array (
+          'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:carousel_item',
+          'config' => 
+          array (
+            'type' => 'inline',
+            'foreign_table' => 'tx_bootstrappackage_carousel_item',
+            'foreign_field' => 'tt_content',
+            'appearance' => 
+            array (
+              'useSortable' => true,
+              'showSynchronizationLink' => true,
+              'showAllLocalizationLink' => true,
+              'showPossibleLocalizationRecords' => true,
+              'showRemovedLocalizationRecords' => false,
+              'expandSingle' => true,
+              'enabledControls' => 
+              array (
+                'localize' => true,
+              ),
+            ),
+            'behaviour' => 
+            array (
+              'mode' => 'select',
+              'localizeChildrenAtParentLocalization' => true,
+            ),
+          ),
+        ),
       ),
       'types' => 
       array (
@@ -10236,6 +10743,167 @@ return array (
                 'richtextConfiguration' => 'default',
               ),
             ),
+            'image' => 
+            array (
+              'config' => 
+              array (
+                'overrideChildTca' => 
+                array (
+                  'columns' => 
+                  array (
+                    'crop' => 
+                    array (
+                      'config' => 
+                      array (
+                        'cropVariants' => 
+                        array (
+                          'default' => 
+                          array (
+                            'title' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.default',
+                            'allowedAspectRatios' => 
+                            array (
+                              '16:9' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.16_9',
+                                'value' => 1.7777777777777777,
+                              ),
+                              '4:3' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.4_3',
+                                'value' => 1.3333333333333333,
+                              ),
+                              '1:1' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.1_1',
+                                'value' => 1.0,
+                              ),
+                              'NaN' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.free',
+                                'value' => 0.0,
+                              ),
+                            ),
+                            'selectedRatio' => 'NaN',
+                            'cropArea' => 
+                            array (
+                              'x' => 0.0,
+                              'y' => 0.0,
+                              'width' => 1.0,
+                              'height' => 1.0,
+                            ),
+                          ),
+                          'medium' => 
+                          array (
+                            'title' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.medium',
+                            'allowedAspectRatios' => 
+                            array (
+                              '16:9' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.16_9',
+                                'value' => 1.7777777777777777,
+                              ),
+                              '4:3' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.4_3',
+                                'value' => 1.3333333333333333,
+                              ),
+                              '1:1' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.1_1',
+                                'value' => 1.0,
+                              ),
+                              'NaN' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.free',
+                                'value' => 0.0,
+                              ),
+                            ),
+                            'selectedRatio' => 'NaN',
+                            'cropArea' => 
+                            array (
+                              'x' => 0.0,
+                              'y' => 0.0,
+                              'width' => 1.0,
+                              'height' => 1.0,
+                            ),
+                          ),
+                          'small' => 
+                          array (
+                            'title' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.small',
+                            'allowedAspectRatios' => 
+                            array (
+                              '16:9' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.16_9',
+                                'value' => 1.7777777777777777,
+                              ),
+                              '4:3' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.4_3',
+                                'value' => 1.3333333333333333,
+                              ),
+                              '1:1' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.1_1',
+                                'value' => 1.0,
+                              ),
+                              'NaN' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.free',
+                                'value' => 0.0,
+                              ),
+                            ),
+                            'selectedRatio' => 'NaN',
+                            'cropArea' => 
+                            array (
+                              'x' => 0.0,
+                              'y' => 0.0,
+                              'width' => 1.0,
+                              'height' => 1.0,
+                            ),
+                          ),
+                          'extrasmall' => 
+                          array (
+                            'title' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.extrasmall',
+                            'allowedAspectRatios' => 
+                            array (
+                              '16:9' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.16_9',
+                                'value' => 1.7777777777777777,
+                              ),
+                              '4:3' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.4_3',
+                                'value' => 1.3333333333333333,
+                              ),
+                              '1:1' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.1_1',
+                                'value' => 1.0,
+                              ),
+                              'NaN' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.free',
+                                'value' => 0.0,
+                              ),
+                            ),
+                            'selectedRatio' => 'NaN',
+                            'cropArea' => 
+                            array (
+                              'x' => 0.0,
+                              'y' => 0.0,
+                              'width' => 1.0,
+                              'height' => 1.0,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
           ),
         ),
         'textmedia' => 
@@ -10251,11 +10919,336 @@ return array (
                 'richtextConfiguration' => 'default',
               ),
             ),
+            'assets' => 
+            array (
+              'config' => 
+              array (
+                'overrideChildTca' => 
+                array (
+                  'columns' => 
+                  array (
+                    'crop' => 
+                    array (
+                      'config' => 
+                      array (
+                        'cropVariants' => 
+                        array (
+                          'default' => 
+                          array (
+                            'title' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.default',
+                            'allowedAspectRatios' => 
+                            array (
+                              '16:9' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.16_9',
+                                'value' => 1.7777777777777777,
+                              ),
+                              '4:3' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.4_3',
+                                'value' => 1.3333333333333333,
+                              ),
+                              '1:1' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.1_1',
+                                'value' => 1.0,
+                              ),
+                              'NaN' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.free',
+                                'value' => 0.0,
+                              ),
+                            ),
+                            'selectedRatio' => 'NaN',
+                            'cropArea' => 
+                            array (
+                              'x' => 0.0,
+                              'y' => 0.0,
+                              'width' => 1.0,
+                              'height' => 1.0,
+                            ),
+                          ),
+                          'medium' => 
+                          array (
+                            'title' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.medium',
+                            'allowedAspectRatios' => 
+                            array (
+                              '16:9' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.16_9',
+                                'value' => 1.7777777777777777,
+                              ),
+                              '4:3' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.4_3',
+                                'value' => 1.3333333333333333,
+                              ),
+                              '1:1' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.1_1',
+                                'value' => 1.0,
+                              ),
+                              'NaN' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.free',
+                                'value' => 0.0,
+                              ),
+                            ),
+                            'selectedRatio' => 'NaN',
+                            'cropArea' => 
+                            array (
+                              'x' => 0.0,
+                              'y' => 0.0,
+                              'width' => 1.0,
+                              'height' => 1.0,
+                            ),
+                          ),
+                          'small' => 
+                          array (
+                            'title' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.small',
+                            'allowedAspectRatios' => 
+                            array (
+                              '16:9' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.16_9',
+                                'value' => 1.7777777777777777,
+                              ),
+                              '4:3' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.4_3',
+                                'value' => 1.3333333333333333,
+                              ),
+                              '1:1' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.1_1',
+                                'value' => 1.0,
+                              ),
+                              'NaN' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.free',
+                                'value' => 0.0,
+                              ),
+                            ),
+                            'selectedRatio' => 'NaN',
+                            'cropArea' => 
+                            array (
+                              'x' => 0.0,
+                              'y' => 0.0,
+                              'width' => 1.0,
+                              'height' => 1.0,
+                            ),
+                          ),
+                          'extrasmall' => 
+                          array (
+                            'title' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.extrasmall',
+                            'allowedAspectRatios' => 
+                            array (
+                              '16:9' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.16_9',
+                                'value' => 1.7777777777777777,
+                              ),
+                              '4:3' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.4_3',
+                                'value' => 1.3333333333333333,
+                              ),
+                              '1:1' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.1_1',
+                                'value' => 1.0,
+                              ),
+                              'NaN' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.free',
+                                'value' => 0.0,
+                              ),
+                            ),
+                            'selectedRatio' => 'NaN',
+                            'cropArea' => 
+                            array (
+                              'x' => 0.0,
+                              'y' => 0.0,
+                              'width' => 1.0,
+                              'height' => 1.0,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
           ),
         ),
         'image' => 
         array (
           'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.headers;headers,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,image,--palette--;LLL:EXT:frontend/Resources/Private/Language/Database.xlf:tt_content.palette.mediaAdjustments;mediaAdjustments,--palette--;LLL:EXT:frontend/Resources/Private/Language/Database.xlf:tt_content.palette.gallerySettings;gallerySettings,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.imagelinks;imagelinks,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,--div--;LLL:EXT:lang/Resources/Private/Language/locallang_tca.xlf:sys_category.tabs.category,categories,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,rowDescription,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended',
+          'columnsOverrides' => 
+          array (
+            'image' => 
+            array (
+              'config' => 
+              array (
+                'overrideChildTca' => 
+                array (
+                  'columns' => 
+                  array (
+                    'crop' => 
+                    array (
+                      'config' => 
+                      array (
+                        'cropVariants' => 
+                        array (
+                          'default' => 
+                          array (
+                            'title' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.default',
+                            'allowedAspectRatios' => 
+                            array (
+                              '16:9' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.16_9',
+                                'value' => 1.7777777777777777,
+                              ),
+                              '4:3' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.4_3',
+                                'value' => 1.3333333333333333,
+                              ),
+                              '1:1' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.1_1',
+                                'value' => 1.0,
+                              ),
+                              'NaN' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.free',
+                                'value' => 0.0,
+                              ),
+                            ),
+                            'selectedRatio' => 'NaN',
+                            'cropArea' => 
+                            array (
+                              'x' => 0.0,
+                              'y' => 0.0,
+                              'width' => 1.0,
+                              'height' => 1.0,
+                            ),
+                          ),
+                          'medium' => 
+                          array (
+                            'title' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.medium',
+                            'allowedAspectRatios' => 
+                            array (
+                              '16:9' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.16_9',
+                                'value' => 1.7777777777777777,
+                              ),
+                              '4:3' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.4_3',
+                                'value' => 1.3333333333333333,
+                              ),
+                              '1:1' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.1_1',
+                                'value' => 1.0,
+                              ),
+                              'NaN' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.free',
+                                'value' => 0.0,
+                              ),
+                            ),
+                            'selectedRatio' => 'NaN',
+                            'cropArea' => 
+                            array (
+                              'x' => 0.0,
+                              'y' => 0.0,
+                              'width' => 1.0,
+                              'height' => 1.0,
+                            ),
+                          ),
+                          'small' => 
+                          array (
+                            'title' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.small',
+                            'allowedAspectRatios' => 
+                            array (
+                              '16:9' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.16_9',
+                                'value' => 1.7777777777777777,
+                              ),
+                              '4:3' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.4_3',
+                                'value' => 1.3333333333333333,
+                              ),
+                              '1:1' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.1_1',
+                                'value' => 1.0,
+                              ),
+                              'NaN' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.free',
+                                'value' => 0.0,
+                              ),
+                            ),
+                            'selectedRatio' => 'NaN',
+                            'cropArea' => 
+                            array (
+                              'x' => 0.0,
+                              'y' => 0.0,
+                              'width' => 1.0,
+                              'height' => 1.0,
+                            ),
+                          ),
+                          'extrasmall' => 
+                          array (
+                            'title' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.extrasmall',
+                            'allowedAspectRatios' => 
+                            array (
+                              '16:9' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.16_9',
+                                'value' => 1.7777777777777777,
+                              ),
+                              '4:3' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.4_3',
+                                'value' => 1.3333333333333333,
+                              ),
+                              '1:1' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.1_1',
+                                'value' => 1.0,
+                              ),
+                              'NaN' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.free',
+                                'value' => 0.0,
+                              ),
+                            ),
+                            'selectedRatio' => 'NaN',
+                            'cropArea' => 
+                            array (
+                              'x' => 0.0,
+                              'y' => 0.0,
+                              'width' => 1.0,
+                              'height' => 1.0,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
         ),
         'html' => 
         array (
@@ -10378,6 +11371,348 @@ return array (
         'form_formframework' => 
         array (
           'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header;header,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.plugin,pi_flexform,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,categories,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,rowDescription,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended',
+        ),
+        'media' => 
+        array (
+          'columnsOverrides' => 
+          array (
+            'assets' => 
+            array (
+              'config' => 
+              array (
+                'overrideChildTca' => 
+                array (
+                  'columns' => 
+                  array (
+                    'crop' => 
+                    array (
+                      'config' => 
+                      array (
+                        'cropVariants' => 
+                        array (
+                          'default' => 
+                          array (
+                            'title' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.default',
+                            'allowedAspectRatios' => 
+                            array (
+                              '16:9' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.16_9',
+                                'value' => 1.7777777777777777,
+                              ),
+                              '4:3' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.4_3',
+                                'value' => 1.3333333333333333,
+                              ),
+                              '1:1' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.1_1',
+                                'value' => 1.0,
+                              ),
+                              'NaN' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.free',
+                                'value' => 0.0,
+                              ),
+                            ),
+                            'selectedRatio' => 'NaN',
+                            'cropArea' => 
+                            array (
+                              'x' => 0.0,
+                              'y' => 0.0,
+                              'width' => 1.0,
+                              'height' => 1.0,
+                            ),
+                          ),
+                          'medium' => 
+                          array (
+                            'title' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.medium',
+                            'allowedAspectRatios' => 
+                            array (
+                              '16:9' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.16_9',
+                                'value' => 1.7777777777777777,
+                              ),
+                              '4:3' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.4_3',
+                                'value' => 1.3333333333333333,
+                              ),
+                              '1:1' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.1_1',
+                                'value' => 1.0,
+                              ),
+                              'NaN' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.free',
+                                'value' => 0.0,
+                              ),
+                            ),
+                            'selectedRatio' => 'NaN',
+                            'cropArea' => 
+                            array (
+                              'x' => 0.0,
+                              'y' => 0.0,
+                              'width' => 1.0,
+                              'height' => 1.0,
+                            ),
+                          ),
+                          'small' => 
+                          array (
+                            'title' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.small',
+                            'allowedAspectRatios' => 
+                            array (
+                              '16:9' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.16_9',
+                                'value' => 1.7777777777777777,
+                              ),
+                              '4:3' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.4_3',
+                                'value' => 1.3333333333333333,
+                              ),
+                              '1:1' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.1_1',
+                                'value' => 1.0,
+                              ),
+                              'NaN' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.free',
+                                'value' => 0.0,
+                              ),
+                            ),
+                            'selectedRatio' => 'NaN',
+                            'cropArea' => 
+                            array (
+                              'x' => 0.0,
+                              'y' => 0.0,
+                              'width' => 1.0,
+                              'height' => 1.0,
+                            ),
+                          ),
+                          'extrasmall' => 
+                          array (
+                            'title' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:option.extrasmall',
+                            'allowedAspectRatios' => 
+                            array (
+                              '16:9' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.16_9',
+                                'value' => 1.7777777777777777,
+                              ),
+                              '4:3' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.4_3',
+                                'value' => 1.3333333333333333,
+                              ),
+                              '1:1' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.1_1',
+                                'value' => 1.0,
+                              ),
+                              'NaN' => 
+                              array (
+                                'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.ratio.free',
+                                'value' => 0.0,
+                              ),
+                            ),
+                            'selectedRatio' => 'NaN',
+                            'cropArea' => 
+                            array (
+                              'x' => 0.0,
+                              'y' => 0.0,
+                              'width' => 1.0,
+                              'height' => 1.0,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    'uid_local' => 
+                    array (
+                      'config' => 
+                      array (
+                        'appearance' => 
+                        array (
+                          'elementBrowserAllowed' => 'youtube, vimeo',
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                'filter' => 
+                array (
+                  0 => 
+                  array (
+                    'parameters' => 
+                    array (
+                      'allowedFileExtensions' => 'youtube, vimeo',
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+          'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.headers;headers,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.media,assets,--palette--;LLL:EXT:frontend/Resources/Private/Language/Database.xlf:tt_content.palette.mediaAdjustments;mediaAdjustments,--palette--;LLL:EXT:frontend/Resources/Private/Language/Database.xlf:tt_content.palette.gallerySettings;gallerySettings,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.imagelinks;imagelinks,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,categories,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,rowDescription,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended',
+        ),
+        'accordion' => 
+        array (
+          'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.headers;headers,tx_bootstrappackage_accordion_item,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,categories,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,rowDescription,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended',
+        ),
+        'audio' => 
+        array (
+          'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.headers;headers,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.media,assets,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,categories,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,rowDescription,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended',
+          'columnsOverrides' => 
+          array (
+            'assets' => 
+            array (
+              'config' => 
+              array (
+                'filter' => 
+                array (
+                  0 => 
+                  array (
+                    'parameters' => 
+                    array (
+                      'allowedFileExtensions' => 'mp3',
+                    ),
+                  ),
+                ),
+                'overrideChildTca' => 
+                array (
+                  'columns' => 
+                  array (
+                    'uid_local' => 
+                    array (
+                      'config' => 
+                      array (
+                        'appearance' => 
+                        array (
+                          'elementBrowserAllowed' => 'mp3',
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
+        'carousel' => 
+        array (
+          'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.headers;headers,tx_bootstrappackage_carousel_item,--div--;LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:carousel.options,pi_flexform;LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:advanced,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,categories,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,rowDescription,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended',
+        ),
+        'carousel_fullscreen' => 
+        array (
+          'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.headers;headers,tx_bootstrappackage_carousel_item,--div--;LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:carousel.options,pi_flexform;LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:advanced,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,categories,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,rowDescription,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended',
+        ),
+        'carousel_small' => 
+        array (
+          'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.headers;headers,tx_bootstrappackage_carousel_item,--div--;LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:carousel.options,pi_flexform;LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:advanced,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,categories,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,rowDescription,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended',
+        ),
+        'external_media' => 
+        array (
+          'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.headers;headers,--palette--;LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:field.palette.external_media;external_media,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,categories,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,rowDescription,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended',
+        ),
+        'listgroup' => 
+        array (
+          'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.headers;headers,bodytext,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,categories,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,rowDescription,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended',
+          'columnsOverrides' => 
+          array (
+            'bodytext' => 
+            array (
+              'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext.ALT.bulletlist_formlabel',
+              'config' => 
+              array (
+                'wrap' => 'off',
+              ),
+            ),
+          ),
+        ),
+        'menu_thumbnail_dir' => 
+        array (
+          'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.headers;headers,pages;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:pages.ALT.menu_formlabel,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.accessibility,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.menu_accessibility;menu_accessibility,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,categories,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,rowDescription,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended',
+        ),
+        'menu_thumbnail_list' => 
+        array (
+          'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.headers;headers,pages;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:pages.ALT.menu_formlabel,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.accessibility,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.menu_accessibility;menu_accessibility,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,categories,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,rowDescription,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended',
+        ),
+        'panel' => 
+        array (
+          'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header;header_minimal,bodytext,panel_class,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,categories,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,rowDescription,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended',
+          'columnsOverrides' => 
+          array (
+            'bodytext' => 
+            array (
+              'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel',
+              'config' => 
+              array (
+                'enableRichtext' => true,
+                'richtextConfiguration' => 'default',
+              ),
+            ),
+          ),
+        ),
+        'quote' => 
+        array (
+          'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header.ALT.div_formlabel,quote_link;LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:quote.link,quote_source;LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:quote.source,bodytext;LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:quote.text,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,categories,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,rowDescription,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended',
+        ),
+        'tab' => 
+        array (
+          'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.headers;headers,tx_bootstrappackage_tab_item,--div--;LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:tab.options,pi_flexform;LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:advanced,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,categories,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,rowDescription,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended',
+        ),
+        'textcolumn' => 
+        array (
+          'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.headers;headers,bodytext,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,categories,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,rowDescription,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended',
+          'columnsOverrides' => 
+          array (
+            'bodytext' => 
+            array (
+              'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel',
+              'config' => 
+              array (
+                'enableRichtext' => true,
+                'richtextConfiguration' => 'default',
+              ),
+            ),
+          ),
+        ),
+        'texticon' => 
+        array (
+          'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.headers;headers,bodytext,--div--;LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:tabs.icon,--palette--;LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:field.icon;bootstrap_package_icons,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,categories,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,rowDescription,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended',
+          'columnsOverrides' => 
+          array (
+            'bodytext' => 
+            array (
+              'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel',
+              'config' => 
+              array (
+                'enableRichtext' => true,
+                'richtextConfiguration' => 'default',
+              ),
+            ),
+          ),
+        ),
+        'textteaser' => 
+        array (
+          'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.headers;headers,teaser,bodytext,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,--palette--;;language,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,--palette--;;hidden,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,categories,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,rowDescription,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended',
+          'columnsOverrides' => 
+          array (
+            'bodytext' => 
+            array (
+              'label' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel',
+              'config' => 
+              array (
+                'enableRichtext' => true,
+                'richtextConfiguration' => 'default',
+              ),
+            ),
+          ),
         ),
       ),
       'palettes' => 
@@ -10517,6 +11852,43 @@ return array (
                 table_header_position,
                 table_tfoot
             ',
+        ),
+        'external_media' => 
+        array (
+          'showitem' => '
+        external_media_source, --linebreak--,
+        external_media_ratio
+    ',
+        ),
+        'bootstrap_package_icons' => 
+        array (
+          'showitem' => '
+        icon_position, icon_type, icon_size, --linebreak--,
+        icon_color, icon_background, --linebreak--,
+        icon
+    ',
+        ),
+        'imageblock' => 
+        array (
+          'showitem' => '
+        imageorient,
+        imagecols
+    ',
+        ),
+        'mediablock' => 
+        array (
+          'showitem' => '
+        imageorient,
+        imagecols
+    ',
+        ),
+        'header_minimal' => 
+        array (
+          'showitem' => '
+        header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_formlabel,
+        --linebreak--,
+        header_layout;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_layout_formlabel,
+    ',
         ),
       ),
     ),
@@ -10912,6 +12284,1393 @@ return array (
         0 => 
         array (
           'showitem' => '--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,category,subject,message,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,personal,--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended',
+        ),
+      ),
+    ),
+    'tx_bootstrappackage_accordion_item' => 
+    array (
+      'ctrl' => 
+      array (
+        'label' => 'header',
+        'label_alt' => 'bodytext',
+        'sortby' => 'sorting',
+        'tstamp' => 'tstamp',
+        'crdate' => 'crdate',
+        'cruser_id' => 'cruser_id',
+        'title' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:accordion_item',
+        'delete' => 'deleted',
+        'versioningWS' => true,
+        'origUid' => 't3_origuid',
+        'hideAtCopy' => true,
+        'prependAtCopy' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.prependAtCopy',
+        'transOrigPointerField' => 'l10n_parent',
+        'transOrigDiffSourceField' => 'l10n_diffsource',
+        'languageField' => 'sys_language_uid',
+        'dividers2tabs' => true,
+        'enablecolumns' => 
+        array (
+          'disabled' => 'hidden',
+          'starttime' => 'starttime',
+          'endtime' => 'endtime',
+        ),
+        'typeicon_classes' => 
+        array (
+          'default' => 'content-bootstrappackage-accordion-item',
+        ),
+      ),
+      'interface' => 
+      array (
+        'showRecordFieldList' => '
+            hidden,
+            tt_content,
+            header,
+            bodytext
+        ',
+      ),
+      'types' => 
+      array (
+        1 => 
+        array (
+          'showitem' => '--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,header,bodytext,media,mediaorient,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.visibility;visibility,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--palette--;;hiddenLanguagePalette',
+        ),
+      ),
+      'palettes' => 
+      array (
+        1 => 
+        array (
+          'showitem' => '',
+        ),
+        'access' => 
+        array (
+          'showitem' => '
+                starttime;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:starttime_formlabel,
+                endtime;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:endtime_formlabel
+            ',
+        ),
+        'general' => 
+        array (
+          'showitem' => '
+                tt_content
+            ',
+        ),
+        'visibility' => 
+        array (
+          'showitem' => '
+                hidden;LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:accordion_item
+            ',
+        ),
+        'hiddenLanguagePalette' => 
+        array (
+          'showitem' => 'sys_language_uid, l10n_parent',
+          'isHiddenPalette' => true,
+        ),
+      ),
+      'columns' => 
+      array (
+        'tt_content' => 
+        array (
+          'exclude' => true,
+          'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:accordion_item.tt_content',
+          'config' => 
+          array (
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'foreign_table' => 'tt_content',
+            'foreign_table_where' => 'AND tt_content.pid=###CURRENT_PID### AND tt_content.CType="accordion"',
+            'maxitems' => 1,
+            'default' => 0,
+          ),
+        ),
+        'hidden' => 
+        array (
+          'exclude' => true,
+          'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.hidden',
+          'config' => 
+          array (
+            'type' => 'check',
+            'items' => 
+            array (
+              1 => 
+              array (
+                0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:hidden.I.0',
+              ),
+            ),
+          ),
+        ),
+        'starttime' => 
+        array (
+          'exclude' => true,
+          'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.starttime',
+          'config' => 
+          array (
+            'type' => 'input',
+            'renderType' => 'inputDateTime',
+            'eval' => 'datetime',
+            'default' => 0,
+          ),
+          'l10n_mode' => 'exclude',
+          'l10n_display' => 'defaultAsReadonly',
+        ),
+        'endtime' => 
+        array (
+          'exclude' => true,
+          'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.endtime',
+          'config' => 
+          array (
+            'type' => 'input',
+            'renderType' => 'inputDateTime',
+            'eval' => 'datetime',
+            'default' => 0,
+            'range' => 
+            array (
+              'upper' => 2145913200,
+            ),
+          ),
+          'l10n_mode' => 'exclude',
+          'l10n_display' => 'defaultAsReadonly',
+        ),
+        'sys_language_uid' => 
+        array (
+          'exclude' => 1,
+          'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.language',
+          'config' => 
+          array (
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'foreign_table' => 'sys_language',
+            'foreign_table_where' => 'ORDER BY sys_language.title',
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.allLanguages',
+                1 => -1,
+              ),
+              1 => 
+              array (
+                0 => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.default_value',
+                1 => 0,
+              ),
+            ),
+            'allowNonIdValues' => true,
+          ),
+        ),
+        'l10n_parent' => 
+        array (
+          'displayCond' => 'FIELD:sys_language_uid:>:0',
+          'exclude' => 1,
+          'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.l18n_parent',
+          'config' => 
+          array (
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => '',
+                1 => 0,
+              ),
+            ),
+            'foreign_table' => 'tx_bootstrappackage_accordion_item',
+            'foreign_table_where' => 'AND tx_bootstrappackage_accordion_item.pid=###CURRENT_PID### AND tx_bootstrappackage_accordion_item.sys_language_uid IN (-1,0)',
+            'default' => 0,
+          ),
+        ),
+        'l10n_diffsource' => 
+        array (
+          'config' => 
+          array (
+            'type' => 'passthrough',
+          ),
+        ),
+        'header' => 
+        array (
+          'exclude' => true,
+          'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:accordion_item.header',
+          'config' => 
+          array (
+            'type' => 'input',
+            'size' => 50,
+            'eval' => 'trim,required',
+          ),
+        ),
+        'bodytext' => 
+        array (
+          'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:accordion_item.bodytext',
+          'l10n_mode' => 'prefixLangTitle',
+          'l10n_cat' => 'text',
+          'config' => 
+          array (
+            'type' => 'text',
+            'cols' => '80',
+            'rows' => '15',
+            'softref' => 'typolink_tag,images,email[subst],url',
+            'enableRichtext' => true,
+            'richtextConfiguration' => 'default',
+          ),
+        ),
+        'media' => 
+        array (
+          'exclude' => true,
+          'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:accordion_item.media',
+          'config' => 
+          array (
+            'type' => 'inline',
+            'foreign_table' => 'sys_file_reference',
+            'foreign_field' => 'uid_foreign',
+            'foreign_sortby' => 'sorting_foreign',
+            'foreign_table_field' => 'tablenames',
+            'foreign_match_fields' => 
+            array (
+              'fieldname' => 'media',
+            ),
+            'foreign_label' => 'uid_local',
+            'foreign_selector' => 'uid_local',
+            'overrideChildTca' => 
+            array (
+              'columns' => 
+              array (
+                'uid_local' => 
+                array (
+                  'config' => 
+                  array (
+                    'appearance' => 
+                    array (
+                      'elementBrowserType' => 'file',
+                      'elementBrowserAllowed' => 'gif,jpg,jpeg,bmp,png,pdf,svg,ai,mp3,wav,mp4,ogg,flac,opus,webm,youtube,vimeo',
+                    ),
+                  ),
+                ),
+              ),
+              'types' => 
+              array (
+                0 => 
+                array (
+                  'showitem' => '
+                                    --palette--;LLL:EXT:lang/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
+                                    --palette--;;filePalette',
+                ),
+                1 => 
+                array (
+                  'showitem' => '
+                                    --palette--;LLL:EXT:lang/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
+                                    --palette--;;filePalette',
+                ),
+                2 => 
+                array (
+                  'showitem' => '
+                                    --palette--;LLL:EXT:lang/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
+                                    --palette--;;filePalette',
+                ),
+                3 => 
+                array (
+                  'showitem' => '
+                                    --palette--;LLL:EXT:lang/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.audioOverlayPalette;audioOverlayPalette,
+                                    --palette--;;filePalette',
+                ),
+                4 => 
+                array (
+                  'showitem' => '
+                                    --palette--;LLL:EXT:lang/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.videoOverlayPalette;videoOverlayPalette,
+                                    --palette--;;filePalette',
+                ),
+                5 => 
+                array (
+                  'showitem' => '
+                                    --palette--;LLL:EXT:lang/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
+                                    --palette--;;filePalette',
+                ),
+              ),
+            ),
+            'filter' => 
+            array (
+              0 => 
+              array (
+                'userFunc' => 'TYPO3\\CMS\\Core\\Resource\\Filter\\FileExtensionFilter->filterInlineChildren',
+                'parameters' => 
+                array (
+                  'allowedFileExtensions' => 'gif,jpg,jpeg,bmp,png,pdf,svg,ai,mp3,wav,mp4,ogg,flac,opus,webm,youtube,vimeo',
+                  'disallowedFileExtensions' => '',
+                ),
+              ),
+            ),
+            'appearance' => 
+            array (
+              'useSortable' => true,
+              'headerThumbnail' => 
+              array (
+                'field' => 'uid_local',
+                'width' => '45',
+                'height' => '45c',
+              ),
+              'enabledControls' => 
+              array (
+                'info' => true,
+                'new' => false,
+                'dragdrop' => true,
+                'sort' => false,
+                'hide' => true,
+                'delete' => true,
+              ),
+              'createNewRelationLinkTitle' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:images.addFileReference',
+            ),
+            'behaviour' => 
+            array (
+              'localizeChildrenAtParentLocalization' => true,
+            ),
+            'minitems' => 0,
+            'maxitems' => 1,
+          ),
+        ),
+        'mediaorient' => 
+        array (
+          'exclude' => 1,
+          'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:accordion_item.mediaorient',
+          'config' => 
+          array (
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:accordion_item.mediaorient.left',
+                1 => 0,
+              ),
+              1 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:accordion_item.mediaorient.right',
+                1 => 1,
+              ),
+            ),
+            'default' => 0,
+          ),
+        ),
+      ),
+    ),
+    'tx_bootstrappackage_carousel_item' => 
+    array (
+      'ctrl' => 
+      array (
+        'label' => 'header',
+        'sortby' => 'sorting',
+        'tstamp' => 'tstamp',
+        'crdate' => 'crdate',
+        'cruser_id' => 'cruser_id',
+        'title' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:carousel_item',
+        'type' => 'item_type',
+        'delete' => 'deleted',
+        'versioningWS' => true,
+        'origUid' => 't3_origuid',
+        'hideAtCopy' => true,
+        'prependAtCopy' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.prependAtCopy',
+        'transOrigPointerField' => 'l10n_parent',
+        'transOrigDiffSourceField' => 'l10n_diffsource',
+        'languageField' => 'sys_language_uid',
+        'dividers2tabs' => true,
+        'enablecolumns' => 
+        array (
+          'disabled' => 'hidden',
+          'starttime' => 'starttime',
+          'endtime' => 'endtime',
+        ),
+        'typeicon_column' => 'item_type',
+        'typeicon_classes' => 
+        array (
+          'default' => 'content-bootstrappackage-carousel-item',
+          'header' => 'content-bootstrappackage-carousel-item-header',
+          'textandimage' => 'content-bootstrappackage-carousel-item-textandimage',
+          'backgroundimage' => 'content-bootstrappackage-carousel-item-backgroundimage',
+          'html' => 'content-bootstrappackage-carousel-item-html',
+        ),
+      ),
+      'interface' => 
+      array (
+        'showRecordFieldList' => '
+            hidden,
+            tt_content,
+            header,
+            header_layout,
+            subheader,
+            subheader_layout,
+            bodytext,
+            image,
+            text_color,
+            background_color,
+            background_image
+        ',
+      ),
+      'types' => 
+      array (
+        1 => 
+        array (
+          'showitem' => '--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,--palette--;LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:carousel_item.header;header,bodytext,image,text_color,--div--;LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:tabs.background,background_color,background_image,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.visibility;visibility,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--palette--;;hiddenLanguagePalette',
+        ),
+        'header' => 
+        array (
+          'showitem' => '--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,--palette--;LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:carousel_item.header;header,text_color,link,--div--;LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:tabs.background,background_color,background_image,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.visibility;visibility,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--palette--;;hiddenLanguagePalette',
+        ),
+        'textandimage' => 
+        array (
+          'showitem' => '--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,--palette--;LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:carousel_item.header;header,bodytext,text_color,image,link,--div--;LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:tabs.background,background_color,background_image,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.visibility;visibility,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--palette--;;hiddenLanguagePalette',
+        ),
+        'backgroundimage' => 
+        array (
+          'showitem' => '--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header.ALT.html_formlabel,background_image,background_color,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.visibility;visibility,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--palette--;;hiddenLanguagePalette',
+        ),
+        'html' => 
+        array (
+          'showitem' => '--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header.ALT.html_formlabel,bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext.ALT.html_formlabel,--div--;LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:tabs.background,background_color,background_image,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.visibility;visibility,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--palette--;;hiddenLanguagePalette',
+          'columnsOverrides' => 
+          array (
+            'bodytext' => 
+            array (
+              'config' => 
+              array (
+                'renderType' => 't3editor',
+                'wrap' => 'off',
+                'format' => 'html',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'palettes' => 
+      array (
+        1 => 
+        array (
+          'showitem' => '',
+        ),
+        'access' => 
+        array (
+          'showitem' => '
+                starttime;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:starttime_formlabel,
+                endtime;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:endtime_formlabel
+            ',
+        ),
+        'header' => 
+        array (
+          'showitem' => '
+                header,
+                header_layout,
+                --linebreak--,
+                subheader,
+                subheader_layout,
+            ',
+        ),
+        'general' => 
+        array (
+          'showitem' => '
+                tt_content,
+                item_type;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:CType_formlabel,
+            ',
+        ),
+        'visibility' => 
+        array (
+          'showitem' => '
+                hidden;LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:carousel_item
+            ',
+        ),
+        'hiddenLanguagePalette' => 
+        array (
+          'showitem' => 'sys_language_uid, l10n_parent',
+          'isHiddenPalette' => true,
+        ),
+      ),
+      'columns' => 
+      array (
+        'tt_content' => 
+        array (
+          'exclude' => true,
+          'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:carousel_item.tt_content',
+          'config' => 
+          array (
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'foreign_table' => 'tt_content',
+            'foreign_table_where' => 'AND tt_content.pid=###CURRENT_PID### AND tt_content.CType IN ("carousel","carousel_small","carousel_fullscreen")',
+            'maxitems' => 1,
+            'default' => 0,
+          ),
+        ),
+        'item_type' => 
+        array (
+          'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.type',
+          'config' => 
+          array (
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:carousel_item.item_type.header',
+                1 => 'header',
+                2 => 'content-bootstrappackage-carousel-item-header',
+              ),
+              1 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:carousel_item.item_type.textandimage',
+                1 => 'textandimage',
+                2 => 'content-bootstrappackage-carousel-item-textandimage',
+              ),
+              2 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:carousel_item.item_type.backgroundimage',
+                1 => 'backgroundimage',
+                2 => 'content-bootstrappackage-carousel-item-backgroundimage',
+              ),
+              3 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:carousel_item.item_type.html',
+                1 => 'html',
+                2 => 'content-bootstrappackage-carousel-item-html',
+              ),
+            ),
+            'default' => 'header',
+            'authMode' => 'explicitAllow',
+            'authMode_enforce' => 'strict',
+          ),
+        ),
+        'hidden' => 
+        array (
+          'exclude' => true,
+          'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.hidden',
+          'config' => 
+          array (
+            'type' => 'check',
+            'items' => 
+            array (
+              1 => 
+              array (
+                0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:hidden.I.0',
+              ),
+            ),
+          ),
+        ),
+        'starttime' => 
+        array (
+          'exclude' => true,
+          'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.starttime',
+          'config' => 
+          array (
+            'type' => 'input',
+            'renderType' => 'inputDateTime',
+            'eval' => 'datetime',
+            'default' => 0,
+          ),
+          'l10n_mode' => 'exclude',
+          'l10n_display' => 'defaultAsReadonly',
+        ),
+        'endtime' => 
+        array (
+          'exclude' => true,
+          'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.endtime',
+          'config' => 
+          array (
+            'type' => 'input',
+            'renderType' => 'inputDateTime',
+            'eval' => 'datetime',
+            'default' => 0,
+            'range' => 
+            array (
+              'upper' => 2145913200,
+            ),
+          ),
+          'l10n_mode' => 'exclude',
+          'l10n_display' => 'defaultAsReadonly',
+        ),
+        'sys_language_uid' => 
+        array (
+          'exclude' => 1,
+          'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.language',
+          'config' => 
+          array (
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'foreign_table' => 'sys_language',
+            'foreign_table_where' => 'ORDER BY sys_language.title',
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.allLanguages',
+                1 => -1,
+              ),
+              1 => 
+              array (
+                0 => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.default_value',
+                1 => 0,
+              ),
+            ),
+            'allowNonIdValues' => true,
+          ),
+        ),
+        'l10n_parent' => 
+        array (
+          'displayCond' => 'FIELD:sys_language_uid:>:0',
+          'exclude' => 1,
+          'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.l18n_parent',
+          'config' => 
+          array (
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => '',
+                1 => 0,
+              ),
+            ),
+            'foreign_table' => 'tx_bootstrappackage_carousel_item',
+            'foreign_table_where' => 'AND tx_bootstrappackage_carousel_item.pid=###CURRENT_PID### AND tx_bootstrappackage_carousel_item.sys_language_uid IN (-1,0)',
+            'default' => 0,
+          ),
+        ),
+        'l10n_diffsource' => 
+        array (
+          'config' => 
+          array (
+            'type' => 'passthrough',
+          ),
+        ),
+        'link' => 
+        array (
+          'exclude' => 1,
+          'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:carousel_item.link',
+          'config' => 
+          array (
+            'type' => 'input',
+            'renderType' => 'inputLink',
+            'size' => 50,
+            'max' => 1024,
+            'eval' => 'trim',
+            'fieldControl' => 
+            array (
+              'linkPopup' => 
+              array (
+                'options' => 
+                array (
+                  'title' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:carousel_item.link',
+                ),
+              ),
+            ),
+            'softref' => 'typolink',
+          ),
+        ),
+        'header' => 
+        array (
+          'exclude' => true,
+          'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:carousel_item.header',
+          'config' => 
+          array (
+            'type' => 'input',
+            'size' => 50,
+            'eval' => 'trim,required',
+          ),
+        ),
+        'header_layout' => 
+        array (
+          'exclude' => 1,
+          'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:carousel_item.header_layout',
+          'config' => 
+          array (
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => 'H1',
+                1 => '1',
+              ),
+              1 => 
+              array (
+                0 => 'H2',
+                1 => '2',
+              ),
+              2 => 
+              array (
+                0 => 'H3',
+                1 => '3',
+              ),
+              3 => 
+              array (
+                0 => 'H4',
+                1 => '4',
+              ),
+            ),
+            'default' => '1',
+          ),
+        ),
+        'subheader' => 
+        array (
+          'exclude' => true,
+          'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:carousel_item.subheader',
+          'config' => 
+          array (
+            'type' => 'input',
+            'size' => 50,
+            'eval' => 'trim',
+          ),
+        ),
+        'subheader_layout' => 
+        array (
+          'exclude' => 1,
+          'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:carousel_item.subheader_layout',
+          'config' => 
+          array (
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => 'H2',
+                1 => '2',
+              ),
+              1 => 
+              array (
+                0 => 'H3',
+                1 => '3',
+              ),
+              2 => 
+              array (
+                0 => 'H4',
+                1 => '4',
+              ),
+            ),
+            'default' => '2',
+          ),
+        ),
+        'bodytext' => 
+        array (
+          'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:carousel_item.bodytext',
+          'l10n_mode' => 'prefixLangTitle',
+          'l10n_cat' => 'text',
+          'config' => 
+          array (
+            'type' => 'text',
+            'cols' => '80',
+            'rows' => '15',
+            'softref' => 'typolink_tag,images,email[subst],url',
+          ),
+        ),
+        'image' => 
+        array (
+          'exclude' => true,
+          'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:carousel_item.image',
+          'config' => 
+          array (
+            'type' => 'inline',
+            'foreign_table' => 'sys_file_reference',
+            'foreign_field' => 'uid_foreign',
+            'foreign_sortby' => 'sorting_foreign',
+            'foreign_table_field' => 'tablenames',
+            'foreign_match_fields' => 
+            array (
+              'fieldname' => 'image',
+            ),
+            'foreign_label' => 'uid_local',
+            'foreign_selector' => 'uid_local',
+            'overrideChildTca' => 
+            array (
+              'columns' => 
+              array (
+                'uid_local' => 
+                array (
+                  'config' => 
+                  array (
+                    'appearance' => 
+                    array (
+                      'elementBrowserType' => 'file',
+                      'elementBrowserAllowed' => 'gif,jpg,jpeg,tif,tiff,bmp,pcx,tga,png,pdf,ai,svg',
+                    ),
+                  ),
+                ),
+              ),
+              'types' => 
+              array (
+                0 => 
+                array (
+                  'showitem' => '
+                                    --palette--;;filePalette
+                                ',
+                ),
+                1 => 
+                array (
+                  'showitem' => '
+                                    --palette--;;filePalette
+                                ',
+                ),
+                2 => 
+                array (
+                  'showitem' => '
+                                    title,
+                                    alternative,
+                                    crop,
+                                    --palette--;;filePalette
+                                ',
+                ),
+                3 => 
+                array (
+                  'showitem' => '
+                                    --palette--;;filePalette
+                                ',
+                ),
+                4 => 
+                array (
+                  'showitem' => '
+                                    --palette--;;filePalette
+                                ',
+                ),
+                5 => 
+                array (
+                  'showitem' => '
+                                    --palette--;;filePalette
+                                ',
+                ),
+              ),
+            ),
+            'filter' => 
+            array (
+              0 => 
+              array (
+                'userFunc' => 'TYPO3\\CMS\\Core\\Resource\\Filter\\FileExtensionFilter->filterInlineChildren',
+                'parameters' => 
+                array (
+                  'allowedFileExtensions' => 'gif,jpg,jpeg,tif,tiff,bmp,pcx,tga,png,pdf,ai,svg',
+                  'disallowedFileExtensions' => '',
+                ),
+              ),
+            ),
+            'appearance' => 
+            array (
+              'useSortable' => true,
+              'headerThumbnail' => 
+              array (
+                'field' => 'uid_local',
+                'width' => '45',
+                'height' => '45c',
+              ),
+              'enabledControls' => 
+              array (
+                'info' => true,
+                'new' => false,
+                'dragdrop' => true,
+                'sort' => false,
+                'hide' => true,
+                'delete' => true,
+              ),
+              'createNewRelationLinkTitle' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:images.addFileReference',
+            ),
+            'behaviour' => 
+            array (
+              'localizeChildrenAtParentLocalization' => true,
+            ),
+            'minitems' => 0,
+            'maxitems' => 1,
+          ),
+        ),
+        'text_color' => 
+        array (
+          'exclude' => true,
+          'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:carousel_item.text_color',
+          'config' => 
+          array (
+            'type' => 'input',
+            'renderType' => 'colorpicker',
+            'default' => '#FFFFFF',
+          ),
+        ),
+        'background_color' => 
+        array (
+          'exclude' => true,
+          'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:carousel_item.background_color',
+          'config' => 
+          array (
+            'type' => 'input',
+            'renderType' => 'colorpicker',
+            'default' => '#333333',
+          ),
+        ),
+        'background_image' => 
+        array (
+          'exclude' => true,
+          'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:carousel_item.background_image',
+          'config' => 
+          array (
+            'type' => 'inline',
+            'foreign_table' => 'sys_file_reference',
+            'foreign_field' => 'uid_foreign',
+            'foreign_sortby' => 'sorting_foreign',
+            'foreign_table_field' => 'tablenames',
+            'foreign_match_fields' => 
+            array (
+              'fieldname' => 'background_image',
+            ),
+            'foreign_label' => 'uid_local',
+            'foreign_selector' => 'uid_local',
+            'overrideChildTca' => 
+            array (
+              'columns' => 
+              array (
+                'uid_local' => 
+                array (
+                  'config' => 
+                  array (
+                    'appearance' => 
+                    array (
+                      'elementBrowserType' => 'file',
+                      'elementBrowserAllowed' => 'gif,jpg,jpeg,tif,tiff,bmp,pcx,tga,png,pdf,ai,svg',
+                    ),
+                  ),
+                ),
+              ),
+              'types' => 
+              array (
+                0 => 
+                array (
+                  'showitem' => '
+                                    --palette--;;filePalette
+                                ',
+                ),
+                1 => 
+                array (
+                  'showitem' => '
+                                    --palette--;;filePalette
+                                ',
+                ),
+                2 => 
+                array (
+                  'showitem' => '
+                                    crop,
+                                    --palette--;;filePalette
+                                ',
+                ),
+                3 => 
+                array (
+                  'showitem' => '
+                                    --palette--;;filePalette
+                                ',
+                ),
+                4 => 
+                array (
+                  'showitem' => '
+                                    --palette--;;filePalette
+                                ',
+                ),
+                5 => 
+                array (
+                  'showitem' => '
+                                    --palette--;;filePalette
+                                ',
+                ),
+              ),
+            ),
+            'filter' => 
+            array (
+              0 => 
+              array (
+                'userFunc' => 'TYPO3\\CMS\\Core\\Resource\\Filter\\FileExtensionFilter->filterInlineChildren',
+                'parameters' => 
+                array (
+                  'allowedFileExtensions' => 'gif,jpg,jpeg,tif,tiff,bmp,pcx,tga,png,pdf,ai,svg',
+                  'disallowedFileExtensions' => '',
+                ),
+              ),
+            ),
+            'appearance' => 
+            array (
+              'useSortable' => true,
+              'headerThumbnail' => 
+              array (
+                'field' => 'uid_local',
+                'width' => '45',
+                'height' => '45c',
+              ),
+              'enabledControls' => 
+              array (
+                'info' => true,
+                'new' => false,
+                'dragdrop' => true,
+                'sort' => false,
+                'hide' => true,
+                'delete' => true,
+              ),
+              'createNewRelationLinkTitle' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:images.addFileReference',
+            ),
+            'behaviour' => 
+            array (
+              'localizeChildrenAtParentLocalization' => true,
+            ),
+            'minitems' => 0,
+            'maxitems' => 1,
+          ),
+        ),
+      ),
+    ),
+    'tx_bootstrappackage_tab_item' => 
+    array (
+      'ctrl' => 
+      array (
+        'label' => 'header',
+        'label_alt' => 'bodytext',
+        'sortby' => 'sorting',
+        'tstamp' => 'tstamp',
+        'crdate' => 'crdate',
+        'cruser_id' => 'cruser_id',
+        'title' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:tab_item',
+        'delete' => 'deleted',
+        'versioningWS' => true,
+        'origUid' => 't3_origuid',
+        'hideAtCopy' => true,
+        'prependAtCopy' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.prependAtCopy',
+        'transOrigPointerField' => 'l10n_parent',
+        'transOrigDiffSourceField' => 'l10n_diffsource',
+        'languageField' => 'sys_language_uid',
+        'dividers2tabs' => true,
+        'enablecolumns' => 
+        array (
+          'disabled' => 'hidden',
+          'starttime' => 'starttime',
+          'endtime' => 'endtime',
+        ),
+        'typeicon_classes' => 
+        array (
+          'default' => 'content-bootstrappackage-tab-item',
+        ),
+      ),
+      'interface' => 
+      array (
+        'showRecordFieldList' => '
+            hidden,
+            tt_content,
+            header,
+            bodytext
+        ',
+      ),
+      'types' => 
+      array (
+        1 => 
+        array (
+          'showitem' => '--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,header,bodytext,media,mediaorient,--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.visibility;visibility,--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,--palette--;;hiddenLanguagePalette',
+        ),
+      ),
+      'palettes' => 
+      array (
+        1 => 
+        array (
+          'showitem' => '',
+        ),
+        'access' => 
+        array (
+          'showitem' => '
+                starttime;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:starttime_formlabel,
+                endtime;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:endtime_formlabel
+            ',
+        ),
+        'general' => 
+        array (
+          'showitem' => '
+                tt_content
+            ',
+        ),
+        'visibility' => 
+        array (
+          'showitem' => '
+                hidden;LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:tab_item
+            ',
+        ),
+        'hiddenLanguagePalette' => 
+        array (
+          'showitem' => 'sys_language_uid, l10n_parent',
+          'isHiddenPalette' => true,
+        ),
+      ),
+      'columns' => 
+      array (
+        'tt_content' => 
+        array (
+          'exclude' => true,
+          'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:tab_item.tt_content',
+          'config' => 
+          array (
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'foreign_table' => 'tt_content',
+            'foreign_table_where' => 'AND tt_content.pid=###CURRENT_PID### AND tt_content.CType="tab"',
+            'maxitems' => 1,
+            'default' => 0,
+          ),
+        ),
+        'hidden' => 
+        array (
+          'exclude' => true,
+          'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.hidden',
+          'config' => 
+          array (
+            'type' => 'check',
+            'items' => 
+            array (
+              1 => 
+              array (
+                0 => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:hidden.I.0',
+              ),
+            ),
+          ),
+        ),
+        'starttime' => 
+        array (
+          'exclude' => true,
+          'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.starttime',
+          'config' => 
+          array (
+            'type' => 'input',
+            'renderType' => 'inputDateTime',
+            'eval' => 'datetime',
+            'default' => 0,
+          ),
+          'l10n_mode' => 'exclude',
+          'l10n_display' => 'defaultAsReadonly',
+        ),
+        'endtime' => 
+        array (
+          'exclude' => true,
+          'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.endtime',
+          'config' => 
+          array (
+            'type' => 'input',
+            'renderType' => 'inputDateTime',
+            'eval' => 'datetime',
+            'default' => 0,
+            'range' => 
+            array (
+              'upper' => 2145913200,
+            ),
+          ),
+          'l10n_mode' => 'exclude',
+          'l10n_display' => 'defaultAsReadonly',
+        ),
+        'sys_language_uid' => 
+        array (
+          'exclude' => 1,
+          'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.language',
+          'config' => 
+          array (
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'foreign_table' => 'sys_language',
+            'foreign_table_where' => 'ORDER BY sys_language.title',
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.allLanguages',
+                1 => -1,
+              ),
+              1 => 
+              array (
+                0 => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.default_value',
+                1 => 0,
+              ),
+            ),
+            'allowNonIdValues' => true,
+          ),
+        ),
+        'l10n_parent' => 
+        array (
+          'displayCond' => 'FIELD:sys_language_uid:>:0',
+          'exclude' => 1,
+          'label' => 'LLL:EXT:lang/Resources/Private/Language/locallang_general.xlf:LGL.l18n_parent',
+          'config' => 
+          array (
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => '',
+                1 => 0,
+              ),
+            ),
+            'foreign_table' => 'tx_bootstrappackage_tab_item',
+            'foreign_table_where' => 'AND tx_bootstrappackage_tab_item.pid=###CURRENT_PID### AND tx_bootstrappackage_tab_item.sys_language_uid IN (-1,0)',
+            'default' => 0,
+          ),
+        ),
+        'l10n_diffsource' => 
+        array (
+          'config' => 
+          array (
+            'type' => 'passthrough',
+          ),
+        ),
+        'header' => 
+        array (
+          'exclude' => true,
+          'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:tab_item.header',
+          'config' => 
+          array (
+            'type' => 'input',
+            'size' => 50,
+            'eval' => 'trim,required',
+          ),
+        ),
+        'bodytext' => 
+        array (
+          'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:tab_item.bodytext',
+          'l10n_mode' => 'prefixLangTitle',
+          'l10n_cat' => 'text',
+          'config' => 
+          array (
+            'type' => 'text',
+            'cols' => '80',
+            'rows' => '15',
+            'softref' => 'typolink_tag,images,email[subst],url',
+            'enableRichtext' => true,
+            'richtextConfiguration' => 'default',
+          ),
+        ),
+        'media' => 
+        array (
+          'exclude' => true,
+          'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:tab_item.media',
+          'config' => 
+          array (
+            'type' => 'inline',
+            'foreign_table' => 'sys_file_reference',
+            'foreign_field' => 'uid_foreign',
+            'foreign_sortby' => 'sorting_foreign',
+            'foreign_table_field' => 'tablenames',
+            'foreign_match_fields' => 
+            array (
+              'fieldname' => 'media',
+            ),
+            'foreign_label' => 'uid_local',
+            'foreign_selector' => 'uid_local',
+            'overrideChildTca' => 
+            array (
+              'columns' => 
+              array (
+                'uid_local' => 
+                array (
+                  'config' => 
+                  array (
+                    'appearance' => 
+                    array (
+                      'elementBrowserType' => 'file',
+                      'elementBrowserAllowed' => 'gif,jpg,jpeg,bmp,png,pdf,svg,ai,mp3,wav,mp4,ogg,flac,opus,webm,youtube,vimeo',
+                    ),
+                  ),
+                ),
+              ),
+              'types' => 
+              array (
+                0 => 
+                array (
+                  'showitem' => '
+                                    --palette--;LLL:EXT:lang/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
+                                    --palette--;;filePalette',
+                ),
+                1 => 
+                array (
+                  'showitem' => '
+                                    --palette--;LLL:EXT:lang/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
+                                    --palette--;;filePalette',
+                ),
+                2 => 
+                array (
+                  'showitem' => '
+                                    --palette--;LLL:EXT:lang/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
+                                    --palette--;;filePalette',
+                ),
+                3 => 
+                array (
+                  'showitem' => '
+                                    --palette--;LLL:EXT:lang/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.audioOverlayPalette;audioOverlayPalette,
+                                    --palette--;;filePalette',
+                ),
+                4 => 
+                array (
+                  'showitem' => '
+                                    --palette--;LLL:EXT:lang/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.videoOverlayPalette;videoOverlayPalette,
+                                    --palette--;;filePalette',
+                ),
+                5 => 
+                array (
+                  'showitem' => '
+                                    --palette--;LLL:EXT:lang/Resources/Private/Language/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,
+                                    --palette--;;filePalette',
+                ),
+              ),
+            ),
+            'filter' => 
+            array (
+              0 => 
+              array (
+                'userFunc' => 'TYPO3\\CMS\\Core\\Resource\\Filter\\FileExtensionFilter->filterInlineChildren',
+                'parameters' => 
+                array (
+                  'allowedFileExtensions' => 'gif,jpg,jpeg,bmp,png,pdf,svg,ai,mp3,wav,mp4,ogg,flac,opus,webm,youtube,vimeo',
+                  'disallowedFileExtensions' => '',
+                ),
+              ),
+            ),
+            'appearance' => 
+            array (
+              'useSortable' => true,
+              'headerThumbnail' => 
+              array (
+                'field' => 'uid_local',
+                'width' => '45',
+                'height' => '45c',
+              ),
+              'enabledControls' => 
+              array (
+                'info' => true,
+                'new' => false,
+                'dragdrop' => true,
+                'sort' => false,
+                'hide' => true,
+                'delete' => true,
+              ),
+              'createNewRelationLinkTitle' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:images.addFileReference',
+            ),
+            'behaviour' => 
+            array (
+              'localizeChildrenAtParentLocalization' => true,
+            ),
+            'minitems' => 0,
+            'maxitems' => 1,
+          ),
+        ),
+        'mediaorient' => 
+        array (
+          'exclude' => 1,
+          'label' => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:tab_item.mediaorient',
+          'config' => 
+          array (
+            'type' => 'select',
+            'renderType' => 'selectSingle',
+            'items' => 
+            array (
+              0 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:tab_item.mediaorient.left',
+                1 => 0,
+              ),
+              1 => 
+              array (
+                0 => 'LLL:EXT:bootstrap_package/Resources/Private/Language/Backend.xlf:tab_item.mediaorient.right',
+                1 => 1,
+              ),
+            ),
+            'default' => 0,
+          ),
         ),
       ),
     ),

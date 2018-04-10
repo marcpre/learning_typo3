@@ -10,7 +10,7 @@
 
 ## Install by downloading `.zip*`
 
-Download [typo3 zip file](https://typo3.org/download/) and the run the script `CREATE_SYMLINKS.sh`.
+Download [typo3 zip file](https://typo3.org/download/) and the run the script `CREATE_SYMLINKS.sh`(UNIX) or `CREATE_SYMLINKS.bat`(Windows) as administrator.
 
 ### Enable `normal` login
 
